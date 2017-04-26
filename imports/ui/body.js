@@ -26,7 +26,7 @@ Template.body.helpers({
 });
 
 Template.body.events({
-  'submit .new-task'(event) {
+  'submit .my-first-form'(event) { //.my-first-form is a class assigned to a form in body.html
     // Prevent default browser form submit
     event.preventDefault();
  

@@ -50,7 +50,7 @@ form {
   position: relative;
 }
  
-.new-task input {
+.my-first-form input {
   box-sizing: border-box;
   padding: 10px 0;
   background: transparent;
@@ -60,7 +60,7 @@ form {
   font-size: 1em;
 }
  
-.new-task input:focus{
+.my-first-form input:focus{
   outline: 0;
 }
  
@@ -121,7 +121,7 @@ header .hide-completed {
     clear: both;
   }
  
-  .new-task input {
+  .my-first-form input {
     padding-bottom: 5px;
   }
 }
