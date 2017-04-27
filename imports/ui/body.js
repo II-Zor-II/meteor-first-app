@@ -12,6 +12,7 @@ import './body.html';
 //2 instantiate new ReactiveDict when body template is created
 Template.body.onCreated(function bodyOnCreated() {
   this.state = new ReactiveDict();
+  Meteor.subscribe('tasks');
 });
 
 Template.body.helpers({
