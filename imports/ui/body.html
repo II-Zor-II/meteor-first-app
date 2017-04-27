@@ -1,13 +1,24 @@
 <body>
   <div class="container">
     <header>
-      <h1>Todo List</h1>
+      <h1>Todo List</h1>v
+      {{> loginButtons}}
+ 
+      {{#if currentUser}}
+        <form class="my-first-form">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+        </form>
+      {{/if}}
     </header>
 <!-- insert form -->
     <form class="my-first-form">
       <input type="text" name="text" placeholder="Type to add new tasks" />
     </form>
    
+      <label class="hide-completed">
+        <input type="checkbox" />
+        Hide Completed Tasks
+      </label>
     <ul>
       {{#each tasks}}
         {{> task}}
@@ -16,9 +27,4 @@
   </div>
 
 </body>
- 
-<template name="task">
-  <h1>Task:</h1><li>{{text}}</li>
-</template>
-
 
